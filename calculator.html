@@ -1,9 +1,65 @@
 <html>
     <head>
+    <link rel="stylesheet" href="./calculator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-        
-        
+        <div class="container">
+            <div class="output">          
+                <p id="display"> </p>
+            </div>
+            <div class="input">
+                <div class="row">
+                   <button class="input-button" data-value ="Sin">Sin </button>
+                   <button class="input-button" data-value ="Cos">Cos </button>
+                   <button class="input-button" data-value ="tan">tan </button>
+                   <button class="input-button" data-value ="C"> C </button>
+               </div>
+
+               <div class="row">
+                   <button class="input-button" data-value ="square"> x<sup> 2</sup> </button>
+                   <button class="input-button" data-value ="cube">x<sup> 3</sup> </button>
+                   <button class="input-button" data-value ="root">&radic; </button>
+                   <button class="input-button" data-value ="cuberoot"> &#8731 </button>
+                </div>
+
+                <div class="row">
+                    <button class="input-button" data-value ="1">1 </button>
+                    <button class="input-button" data-value ="2">2</button>
+                    <button class="input-button" data-value ="3">3 </button>
+                    <button class="input-button" data-value ="-"> - </button>
+                </div>
+
+                    <div class="row">
+                        <button class="input-button" data-value ="4">4 </button>
+                        <button class="input-button" data-value ="5">5 </button>
+                        <button class="input-button" data-value ="6">6 </button>
+                        <button class="input-button" data-value ="/">/ </button>
+                    </div>
+
+                    <div class="row">
+                        <button class="input-button" data-value ="7">7 </button>
+                        <button class="input-button" data-value ="8">8 </button>
+                        <button class="input-button" data-value ="9">9 </button>
+                        <button class="input-button" data-value ="backspc"> &lt </button>
+                    </div>
+
+                    <div class="row">
+                        <button class="input-button" data-value =".">. </button>
+                        <button class="input-button" data-value ="0">0 </button>
+                        <button class="input-button" data-value ="*">* </button>
+                        <button class="input-button" data-value ="%"> % </button>
+                    </div>
+
+                    <div class="row">
+                        <button class="input-button" id="equal" data-value ="=">= </button>
+                        <button class="input-button" id="plus" data-value ="+">+ </button>
+                        
+                    </div>
+            </div>
+        </div>
+
+         <script src="./calculator.js"></script>
     </body>
 </html>
