@@ -53,7 +53,7 @@ var operator=null;
             }
             else if(value == '%'){
                 if(display.innerText == ''){
-                    display.innerText ='Please enter something to multiply';
+                    display.innerText ='Please enter something';
                 }
                 else{
                 operand1 = parseFloat(display.textContent);
@@ -67,18 +67,33 @@ var operator=null;
             }
 
             else if(value == 'Sin'){
+                if(display.innerText== ''){
+                    display.innerText = 'Enter degree first';
+                }
+                else{
                 var o1 = display.innerText;
                 display.innerText = Math.sin(o1* Math.PI / 180);
+                }
             }
 
             else if(value == 'Cos'){
+                if(display.innerText== ''){
+                    display.innerText = 'Enter degree first';
+                }
+                else{
                 var o1 = display.innerText;
                 display.innerText = Math.cos(o1* Math.PI / 180);
+                }
             }
 
             else if(value == 'tan'){
+                if(display.innerText== ''){
+                    display.innerText = 'Enter degree first';
+                }
+                else{
                 var o1 = display.innerText;
                 display.innerText = Math.tan(o1* Math.PI / 180);
+                }
             }
 
             else if(value == 'square'){

@@ -1,35 +1,67 @@
-body{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV76XOut4Y-P-vQe4v57W26FHBYbeHsEIgiQ&usqp=CAU');
+/* body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsRozOAGjKf_IGiVoekfIQoH4rVkof5ItFg&usqp=CAU');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
+@keyframes myanimation {
+    0% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SA5xuUfKJb7qyM3j2U_a7_fuoADln_GLQQ&usqp=CAU');}
+    25%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94xMoE-bblZYYnFTr4KqoUWQtwqCcRpLGTw&usqp=CAU');}
+    50%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNiN7vj9LIaExfQ2i-3uTsI1FEjqxDQB88A&usqp=CAU');}
+    75%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqH3lZxvxiBqMJ0peblLsZFNpIg7DqQhKEA&usqp=CAU');}
+    100% {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLDVRQB_-I93R3uQNeNwSOWvJmOZ25yHt61A&usqp=CAU');}
+  }
+
+  @keyframes outputanim {
+    0% {background-color: #0f3057;}
+    25%{background-color:#555555;}
+    50%{background-color:#625261;}
+    75%{background-color:black;}
+    100% {background-color: grey;}
+  }
+
+body{
+    width:100%;
+    height:100%;
+    color:black;
+    font-weight:bold;
+    animation: myanimation 10s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
 .container{
-    height: 80%;
-    width:35%;
+    height: 85%;
+    width:40%;
     margin-left: 30%;
     margin-top: 7%;
     border: 2px solid black
 }
 #display{
     font-size: 2rem;
-    margin-left:65%;
-    /* padding-top:15%; */
+   color:whitesmoke;
 }
 .output{
-    height: 30%;
+    height: 35%;
     width:100%;
     background-color: #effad3;
-    margin-top: -8%;
+    margin-top: -6%;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVitmzF6ShPiizV9V8ff4bgvd9J_4awxqIg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    animation: outputanim 10s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .input{
-    height: 70%;
+    height: 60%;
     width: 100%;
-    background-color: #f8f1f1;
-    border-top: 3px solid red;
+    background-color: #000000;
+    border-top: 6px solid white;
 }
 .row{
-    height: 14.3%;
+    height: 15.5%;
     width: 100%;
 }
 .input-button{
@@ -42,7 +74,7 @@ body{
     color: white;
 }
 .input-button:hover{ 
-   background-color: #ee6f57;
+   background-color: #000000;
 }
 #equal{
     margin-left: 0%;
